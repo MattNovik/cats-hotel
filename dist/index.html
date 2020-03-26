@@ -316,12 +316,14 @@
 						<input type="text"  name="petName" placeholder="Имя вашего питомца">
 						<input type="tel" name="telephone" placeholder="Телефон">
 						<input type="mail" name="mail" placeholder="Ваш Email">
-						<label for="dateEnter">Дата заезда</label>
-						<div class="dateEnter">
-							<span>с</span>
-							<input type="date" id="dateEnter">
-							<span>до</span>
-							<input type="date">
+						<div class="wrapperLabelAndDateEnter">
+							<label class="labelForDataEnter" for="dateEnter">Дата заезда</label>
+							<div class="dateEnter">
+								<span>с
+								<input type="date" id="dateEnter"></span>
+								<span>до
+								<input type="date"></span>
+							</div>
 						</div>
 						<div class="wrapperForBtn">
 							<button type="button" id="sendBooking">
