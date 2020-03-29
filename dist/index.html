@@ -11,8 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Rubik:500&display=swap" rel="preload">
 		<link rel="shortcut icon" type="image/png" href="images/mainPage/header/pawForButton.png"/>
-		<!-- try to lazy-load images -->
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
 	</head>
 	<body id="body">
 		<header id="header">
@@ -43,16 +42,16 @@
 		  		</label>
 				<ul class="menuBox" id="menuBoxID">
 					<li id="menuToggleJS">
-						<a class="menuItem" href="#whyWe">Почему мы?</a>
+						<a class="menuItem" id="idWhyWe" href="#whyWe">Почему мы?</a>
 					</li>
 					<li>
-						<a class="menuItem" href="#">Номера</a>
+						<a class="menuItem" id="idRooms" href="#rooms">Номера</a>
 					</li>
 					<li>
-						<a class="menuItem" href="#">Отзывы</a>
+						<a class="menuItem" id="idReviews" href="#reviews">Отзывы</a>
 					</li>
 					<li>
-						<a class="menuItem" href="#">Контакты</a>
+						<a class="menuItem" id="idContacts" href="#contacts">Контакты</a>
 					</li>
 					<li>
 						<a class="menuItem tel" href="#">8 (800) 333-55-99</a>
@@ -162,12 +161,12 @@
 			</div>
 			<div class="rooms" id="rooms">
 				<div class="wrapperForImgFish">
-					<img data-src="images/mainPage/icons/fish.png" src="images/mainPage/icons/fish.png" class="lozad"  width="150px" height="50px" alt="BigFish">
+					<img src="images/mainPage/icons/fish.png" width="150px" height="50px" alt="BigFish">
 				</div>
 				<h2>Номера</h2>
 				<div class="wrapperForImgAndRoomDescription">
 					<div class="RoomsImg">
-						<img data-src="images/mainPage/icons/Cat.png"src="images/mainPage/icons/Cat.png" class="lozad"  alt="room">
+						<img src="images/mainPage/icons/Cat.png"  alt="room">
 					</div>
 					<div class="wrapperForRoomDescription">
 						<h4>Эконом плюсс</h4>
