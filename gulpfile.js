@@ -51,7 +51,7 @@ gulp.task("scripts", function() {
 });
 
 gulp.task('imgs', function() {
-    return gulp.src("src/images/**/*.+(jpg|jpeg|png|gif|svg)")
+    return gulp.src("src/images/**/*.+(jpg|jpeg|png|gif|svg|webp)")
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
