@@ -11,7 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Rubik:500&display=swap" rel="preload">
 		<link rel="shortcut icon" type="image/png" href="images/mainPage/header/pawForButton.png"/>
-
+		<!-- try to lazy-load images -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 	</head>
 	<body id="body">
 		<header id="header">
@@ -161,12 +162,12 @@
 			</div>
 			<div class="rooms" id="rooms">
 				<div class="wrapperForImgFish">
-					<img src="images/mainPage/icons/fish.png" width="150px" height="50px" alt="BigFish">
+					<img data-src="images/mainPage/icons/fish.png" src="images/mainPage/icons/fish.png" class="lozad"  width="150px" height="50px" alt="BigFish">
 				</div>
 				<h2>Номера</h2>
 				<div class="wrapperForImgAndRoomDescription">
 					<div class="RoomsImg">
-						<img src="images/mainPage/icons/Cat.png"  alt="room">
+						<img data-src="images/mainPage/icons/Cat.png"src="images/mainPage/icons/Cat.png" class="lozad"  alt="room">
 					</div>
 					<div class="wrapperForRoomDescription">
 						<h4>Эконом плюсс</h4>
