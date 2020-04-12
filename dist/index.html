@@ -140,7 +140,7 @@
 					</div>
 					<div class="walking block">
 						<div class="wrapperForImgBlocks">
-							<img src="images/mainPage/icons/hotelcats/temp.png" width="60" height="60" alt="walking">
+							<img src="images/mainPage/icons/hotelcats/rooms.png" width="60" height="60" alt="walking">
 						</div>
 						<div class="wrapperForText">
 							<h3>Ежедневные прогулки</h3>
@@ -316,27 +316,27 @@
 						</label>
 					</div>
 					<h2>Забронировать номер</h2>
-					<form>
-						<input type="text"  name="Name" placeholder="Ваше имя" require>
-						<input type="text"  name="petName" placeholder="Имя вашего питомца">
-						<input type="tel" name="telephone" placeholder="Телефон">
-						<input type="email" name="mail" placeholder="Ваш Email">
+					<form class="bookingForm">
+						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{2,64}" class="bookingName field" >
+						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,64}" class="bookingPet field" >
+						<input type="tel" name="telephone" placeholder="Телефон"   class="bookingTel field">
+						<input type="email" name="mail" placeholder="Ваш Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="bookingMail field" >
 						<div class="wrapperLabelAndDateEnter">
 							<label class="labelForDataEnter" for="dateEnter">Дата заезда</label>
 							<div class="dateEnter">
-								<span>с
-								<input type="date" id="dateEnter"></span>
-								<span>до
-								<input type="date"></span>
+								<span>с</span>
+								<input type="date" value="2020-01-01" id="dateEnter" patter="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" class="bookingDateStart field">
+								<span>до</span>
+								<input type="date" value="2020-01-10"  patter="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" class="bookingDateEnd field">
 							</div>
 						</div>
 						<div class="wrapperForBtn">
-							<button type="button" id="sendBooking">
+							<button type="submit" id="sendBooking" class="bookingSend">
 							<span>Отправить заявку</span>
 							<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 							</button>
 						</div>
-				</form>
+					</form>
 				</div>
 			</div>
 			<div class="wrapperAnswerForBookingMob" id="wrapperAnswer">
