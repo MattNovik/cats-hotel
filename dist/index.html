@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Rubik:500&display=swap" rel="preload">
 		<link rel="shortcut icon" type="image/png" href="images/mainPage/header/pawForButton.png"/>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body id="body">
 		<header id="header">
@@ -322,8 +322,8 @@
 					</div>
 					<h2>Забронировать номер</h2>
 					<form class="bookingForm">
-						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{2,64}" class="bookingName field" >
-						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,64}" class="bookingPet field" >
+						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,20}" class="bookingName field" >
+						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,20}" class="bookingPet field" >
 						<input type="tel" name="telephone" placeholder="Телефон"   class="bookingTel field">
 						<input type="email" name="mail" placeholder="Ваш Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="bookingMail field" >
 						<div class="wrapperLabelAndDateEnter">
@@ -337,8 +337,8 @@
 						</div>
 						<div class="wrapperForBtn">
 							<button type="submit" id="sendBooking" class="bookingSend">
-							<span>Отправить заявку</span>
-							<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+								<span>Отправить заявку</span>
+								<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 							</button>
 						</div>
 					</form>
