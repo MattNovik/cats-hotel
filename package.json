@@ -24,6 +24,7 @@
     "js-yaml": ">=3.13.1"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "lodash": "^4.17.15"
   }
 }
