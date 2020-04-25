@@ -324,10 +324,10 @@
 					</div>
 					<h2>Забронировать номер</h2>
 					<form class="bookingForm">
-						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,20}" class="bookingName field" tabindex="1">
-						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,20}" class="bookingPet field" tabindex="2">
-						<input type="tel" name="telephone" placeholder="Телефон"   class="bookingTel field" tabindex="3"> 
-						<input type="email" name="mail" placeholder="Ваш Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="bookingMail field" tabindex="4">
+						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,20}" class="bookingName field" tabindex="1" required="">
+						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,20}" class="bookingPet field" tabindex="2" required="">
+						<input type="tel" name="telephone" placeholder="Телефон"   class="bookingTel field" tabindex="3" required=""> 
+						<input type="email" name="mail" placeholder="Ваш Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="bookingMail field" tabindex="4" required="">
 						<div class="wrapperLabelAndDateEnter">
 							<label class="labelForDataEnter" for="dateEnter">Дата заезда</label>
 							<div class="dateEnter">
