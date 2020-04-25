@@ -83,7 +83,7 @@
 									<p>Санкт-Петербург</p>
 									<h1>Котейка</h1>
 									<p>Уютная гостиница для котов и кошек</p>
-									<button id="openBooking">
+									<button id="openBooking" >
 										<span>Забронировать</span>
 										<img src="images/mainPage/header/pawForButton.png" height="36" width="36" alt="smallPew">
 									</button>									
@@ -324,21 +324,22 @@
 					</div>
 					<h2>Забронировать номер</h2>
 					<form class="bookingForm">
-						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,20}" class="bookingName field" >
-						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,20}" class="bookingPet field" >
-						<input type="tel" name="telephone" placeholder="Телефон"   class="bookingTel field">
-						<input type="email" name="mail" placeholder="Ваш Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="bookingMail field" >
+						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,20}" class="bookingName field" tabindex="1">
+						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,20}" class="bookingPet field" tabindex="2">
+						<input type="tel" name="telephone" placeholder="Телефон"   class="bookingTel field" tabindex="3"> 
+						<input type="email" name="mail" placeholder="Ваш Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="bookingMail field" tabindex="4">
 						<div class="wrapperLabelAndDateEnter">
 							<label class="labelForDataEnter" for="dateEnter">Дата заезда</label>
 							<div class="dateEnter">
 								<span>с</span>
-								<input type="text"  value="01.01.2020" id="dateEnter"  class="datepicker-here">
+								<!-- type=text because plugin AirdDatePicker. Problems with dateFormat -->
+								<input type="text"  value="01.01.2020" id="dateEnter"  class="datepicker-here" tabindex="5"> 
 								<span>до</span>
-								<input type="text" value="10.01.2020"  class="datepicker-here">
+								<input type="text" value="10.01.2020"  class="datepicker-here" tabindex="6">
 							</div>
 						</div>
 						<div class="wrapperForBtn">
-							<button type="submit" id="sendBooking" class="bookingSend">
+							<button type="submit" id="sendBooking" class="bookingSend" tabindex="7">
 								<span>Отправить заявку</span>
 								<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 							</button>
