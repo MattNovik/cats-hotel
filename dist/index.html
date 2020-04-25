@@ -14,6 +14,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
         <script src="js/datepicker.min.js"></script>	
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
 	</head>
 	<body id="body">
 		<header id="header">
@@ -161,54 +162,154 @@
 					</div>
 				</div>
 			</div>
-			<div class="rooms" id="rooms">
-				<div class="wrapperForImgFish">
-					<img src="images/mainPage/icons/fish.png" width="150" height="50" alt="BigFish">
-				</div>
-				<h2>Номера</h2>
-				<div class="wrapperForImgAndRoomDescription">
-					<div class="RoomsImg">
-						<picture>
-							<source media="(min-width: 1024px)" type="image/webp" srcset="images/mainPage/icons/catDesc.webp">
-							<source media="(min-width: 1024px)"  srcset="images/mainPage/icons/catDesc.webp">
-							<source media="(min-width: 576px)" type="image/webp" srcset="images/mainPage/icons/catPlan.webp">
-							<source media="(min-width: 576px)"  srcset="images/mainPage/icons/catPlan.webp">
-							<source media="(min-width: 0px)" type="image/webp" srcset="images/mainPage/icons/Cat.webp">
-							<source media="(min-width: 0px)"  srcset="images/mainPage/icons/Cat.webp">	
-							<img src="images/mainPage/icons/Cat.png"  alt="room">
-						</picture>
+			<div class="owl-carousel">
+				<div class="rooms roomFirst" id="roomFirst">
+					<div class="wrapperForImgFish">
+						<img src="images/mainPage/icons/fish.png" width="150" height="50" alt="BigFish">
 					</div>
-					<div class="wrapperForRoomDescription">
-						<h4>Эконом плюсс</h4>
-						<ul>
-							<li>Площадь - 0,90 м2
-								<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
-							</li>
-							<li>Размеры (ШхГхВ) - 90х100х180 см
-								<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
-							</li>
-							<li>Цена за сутки: 200&#8381;
-								<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
-							</li>
-						</ul>
-						<button id="openBookingRoom">
-							<span>Забронировать</span>
-							<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
-						</button>
-					</div>
-				</div>
-				<div class="bottomChoices roomsBlock">
-					<div class="points">
-						<div class="firstPoint">
+					<h2>Номера</h2>
+					<div class="wrapperForImgAndRoomDescription">
+						<div class="RoomsImg">
+							<picture>
+								<source media="(min-width: 1024px)" type="image/webp" srcset="images/mainPage/icons/catDesc.webp">
+								<source media="(min-width: 1024px)"  srcset="images/mainPage/icons/catDesc.png">
+								<source media="(min-width: 576px)" type="image/webp" srcset="images/mainPage/icons/catPlan.webp">
+								<source media="(min-width: 576px)"  srcset="images/mainPage/icons/catPlan.png">
+								<source media="(min-width: 0px)" type="image/webp" srcset="images/mainPage/icons/Cat.webp">
+								<source media="(min-width: 0px)"  srcset="images/mainPage/icons/Cat.png">	
+								<img src="images/mainPage/icons/Cat.png"  alt="room">
+							</picture>
 						</div>
-						<div>
-						</div>
-						<div>
+						<div class="wrapperForRoomDescription">
+							<h4>Эконом плюсс</h4>
+							<ul>
+								<li>Площадь - 0,90 м2
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+								<li>Размеры (ШхГхВ) - 90х100х180 см
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+								<li>Цена за сутки: 200&#8381;
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+							</ul>
+							<button id="openBookingRoom">
+								<span>Забронировать</span>
+								<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+							</button>
 						</div>
 					</div>
-					<div class="arrows">
+					<div class="bottomChoices roomsBlock">
+						<div class="points">
+							<div class="firstPoint">
+							</div>
+							<div class="secondPoint">
+							</div>
+							<div class="thirdPoint">
+							</div>
+						</div>
+						<div class="arrows">
+						</div>
 					</div>
 				</div>
+				<div class="rooms roomSecond" id="roomSecond">
+					<div class="wrapperForImgFish">
+						<img src="images/mainPage/icons/fish.png" width="150" height="50" alt="BigFish">
+					</div>
+					<h2>Номера</h2>
+					<div class="wrapperForImgAndRoomDescription">
+						<div class="RoomsImg">
+							<picture>
+								<source media="(min-width: 1024px)" type="image/webp" srcset="images/mainPage/icons/CatsRooms/secondRoomDesc.webp">
+								<source media="(min-width: 1024px)"  srcset="images/mainPage/icons/CatsRooms/secondRoomDesc.png">
+								<source media="(min-width: 576px)" type="image/webp" srcset="images/mainPage/icons/CatsRooms/secondRoomNotepad.webp">
+								<source media="(min-width: 576px)"  srcset="images/mainPage/icons/CatsRooms/secondRoomNotepad.png">
+								<source media="(min-width: 0px)" type="image/webp" srcset="images/mainPage/icons/CatsRooms/secondRoom.webp">
+								<source media="(min-width: 0px)"  srcset="images/mainPage/icons/CatsRooms/secondRoom.png">	
+								<img src="images/mainPage/icons/CatsRooms/secondRoom.png"  alt="room">
+							</picture>
+						</div>
+						<div class="wrapperForRoomDescription">
+							<h4>Комфорт</h4>
+							<ul>
+								<li>Площадь - 1,13 м2
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+								<li>Размеры (ШхГхВ) - 100х125х180 см
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+								<li>Цена за сутки: 250&#8381;
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+							</ul>
+							<button id="openBookingRoom">
+								<span>Забронировать</span>
+								<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+							</button>
+						</div>
+					</div>
+					<div class="bottomChoices roomsBlock">
+						<div class="points">
+							<div class="firstPoint">
+							</div>
+							<div class="secondPoint">
+							</div>
+							<div class="thirdPoint">
+							</div>
+						</div>
+						<div class="arrows">
+						</div>
+					</div>
+				</div>
+				<div class="rooms roomThird" id="roomThird">
+					<div class="wrapperForImgFish">
+						<img src="images/mainPage/icons/fish.png" width="150" height="50" alt="BigFish">
+					</div>
+					<h2>Номера</h2>
+					<div class="wrapperForImgAndRoomDescription">
+						<div class="RoomsImg">
+							<picture>
+								<source media="(min-width: 1024px)" type="image/webp" srcset="images/mainPage/icons/cCatsRooms/thirdRoomDesc.webp">
+								<source media="(min-width: 1024px)"  srcset="images/mainPage/icons/CatsRooms/thirdRoomDesc.png">
+								<source media="(min-width: 576px)" type="image/webp" srcset="images/mainPage/icons/CatsRooms/thirdRoomNotepad.webp">
+								<source media="(min-width: 576px)"  srcset="images/mainPage/icons/CatsRooms/thirdRoomNotpad.png">
+								<source media="(min-width: 0px)" type="image/webp" srcset="images/mainPage/icons/CatsRooms/thirdRoom.webp">
+								<source media="(min-width: 0px)"  srcset="images/mainPage/icons/CatsRooms/thirdRoom.png">	
+								<img src="images/mainPage/icons/CatsRooms/thirdRoom.png"  alt="room">
+							</picture>
+						</div>
+						<div class="wrapperForRoomDescription">
+							<h4>Сьют</h4>
+							<ul>
+								<li>Площадь - 1,56 м2
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+								<li>Размеры (ШхГхВ) - 125х125х180 см
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+								<li>Цена за сутки: 350&#8381;
+									<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+								</li>
+							</ul>
+							<button id="openBookingRoom">
+								<span>Забронировать</span>
+								<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+							</button>
+						</div>
+					</div>
+					<div class="bottomChoices roomsBlock">
+						<div class="points">
+							<div class="firstPoint">
+							</div>
+							<div class="secondPoint">
+							</div>
+							<div class="thirdPoint">
+							</div>
+						</div>
+						<div class="arrows">
+						</div>
+					</div>
+				</div>								
 			</div>
 			<div class="reviews" id="reviews">
 				<div class="wrapperForImgPew">
@@ -423,6 +524,7 @@
 			</div>
 		</footer>
 		<script src="js/scripts.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 	</body>
 
 </html>
