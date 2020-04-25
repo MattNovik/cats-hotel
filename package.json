@@ -17,7 +17,7 @@
     "gulp-cssnano": "latest",
     "gulp-imagemin": "latest",
     "gulp-rename": "latest",
-    "gulp-sass": "latest",
+    "gulp-sass": "^4.1.0",
     "gulp-uglify": "latest",
     "gulp-uglify-es": "^2.0.0",
     "js-yaml": ">=3.13.1",
