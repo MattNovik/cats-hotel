@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Cats Hotel</title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<meta name="description" content="Hotel for Cats">
+		<meta name="keywords" content="Cats, Hotels">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Rubik:500&display=swap" rel="preload">
+		<link rel="shortcut icon" type="image/png" href="images/mainPage/header/pawForButton.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+        <script src="js/datepicker.min.js"></script>	
+	</head>
+	<body id="body">
+		<header id="header">
+			<a class="logo" href="../">
+				<img src="images/mainPage/header/smallLogo.png" width="40" height="40"
+					alt="catsLogo">
+			</a>
+			<div class="menu desctop">
+				<ul>
+					<li>
+						<a href="#whyWe">Почему мы?</a>
+					</li>
+					<li>
+						<a href="#rooms">Номера</a>
+					</li>
+					<li>
+						<a href="#reviews">Отзывы</a>
+					</li>
+					<li>
+						<a href="#contacts">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu mobile">
+				<input id="menuToggle" type="checkbox" />
+		  		<label class="menuBtn" for="menuToggle" >
+		    	 	<span></span>
+		  		</label>
+				<ul class="menuBox" id="menuBoxID">
+					<li id="menuToggleJS">
+						<a class="menuItem" id="idWhyWe" href="#whyWe">Почему мы?</a>
+					</li>
+					<li>
+						<a class="menuItem" id="idRooms" href="#rooms">Номера</a>
+					</li>
+					<li>
+						<a class="menuItem" id="idReviews" href="#reviews">Отзывы</a>
+					</li>
+					<li>
+						<a class="menuItem" id="idContacts" href="#contacts">Контакты</a>
+					</li>
+					<li>
+						<a class="menuItem tel" href="#">8 (800) 333-55-99</a>
+					</li>
+					<li>
+						<div class="wrapperForSignsSocial">
+								<div class="socialSigns" id="facebook">
+									<img src="images/mainPage/icons/FB.png" alt="facebook" width="24" height="24">
+								</div>
+								<div class="socialSigns" id="instagramm">
+									<img src="images/mainPage/icons/inst.png" alt="instagramm" width="24" height="24">
+								</div>
+								<div class="socialSigns" id="vk">
+									<img src="images/mainPage/icons/vk.png" alt="vk" width="24" height="24">
+								</div>							
+						</div>					
+					</li>
+				</ul>			
+			</div>
+		</header>
+		<main>
+			<div class="contacts" id="contacts">
+				<div class="allContacts">
+					<h2>Как нас найти</h2>
+					<div class="wrapperForContacts">
+						<div>
+								<h5>Адрес</h5>
+								<span>Санкт-Петербург, ул. Большая конюшенная, д.19</span>
+						</div>
+						<div>
+								<h5>Режим работы</h5>
+								<span>Ежедневно, с 9:00 до 20:00</span>
+						</div>
+						<div>
+								<h5>Телефон</h5>
+								<span>8 (800) 333-55-99</span>
+						</div>
+						<div>
+								<h5>Email</h5>
+								<span>info@cat-hotel.ru</span>
+						</div>
+						<div>
+							<h5>Социальные сети</h5>
+							<div class="wrapperForSignsSocial">
+								<div class="socialSigns" id="facebook2">
+									<img src="images/mainPage/icons/FB.png" alt="facebook" width="24" height="24">
+								</div>
+								<div class="socialSigns" id="instagramm2">
+									<img src="images/mainPage/icons/inst.png" alt="instagramm" width="24" height="24">
+								</div>
+								<div class="socialSigns" id="vk2">
+									<img src="images/mainPage/icons/vk.png" alt="vk" width="24" height="24">
+								</div>							
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="maps" id="yandexMap">
+					<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A31772721edd99bb6383629160112376daef996c3a2d142176db19d4b9017196f&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script> -->				
+				</div>
+			</div>
+			<div class="wrapperForBookingMob" id="wrapperBooking">
+				<div class="bookingMob">
+					<div class="wrapperForImgPew">
+						<img src="images/mainPage/icons/Mob/paw.png" width="125" height="110" alt="bgPew">
+					</div>
+					<div class="wrapperForCancel" >
+						<label class="cancelBooking" id="bookingCancel">
+								<span></span>
+						</label>
+					</div>
+					<h2>Забронировать номер</h2>
+					<form class="bookingForm">
+						<input type="text"  name="Name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,20}" class="bookingName field" tabindex="1" required="">
+						<input type="text"  name="petName" placeholder="Имя вашего питомца" pattern="[A-Za-zА-Яа-яЁё]{2,20}" class="bookingPet field" tabindex="2" required="">
+						<input type="tel" name="telephone" placeholder="Телефон"   class="bookingTel field" tabindex="3" required=""> 
+						<input type="email" name="mail" placeholder="Ваш Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="bookingMail field" tabindex="4" required="">
+						<div class="wrapperLabelAndDateEnter">
+							<label class="labelForDataEnter" for="dateEnter">Дата заезда</label>
+							<div class="dateEnter">
+								<span>с</span>
+								<!-- type=text because plugin AirdDatePicker. Problems with dateFormat -->
+								<input type="text"  value="01.01.2020" id="dateEnter"  class="datepicker-here" tabindex="5"> 
+								<span>до</span>
+								<input type="text" value="10.01.2020"  class="datepicker-here" tabindex="6">
+							</div>
+						</div>
+						<div class="wrapperForBtn">
+							<button type="submit" id="sendBooking" class="bookingSend" tabindex="7">
+								<span>Отправить заявку</span>
+								<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="wrapperAnswerForBookingMob" id="wrapperAnswer">
+				<div class="answerForBookingMob">
+					<div class="wrapperForCancel">
+						<label class="cancelBooking" id="answerCancel">
+								<span></span>
+						</label>
+					</div>
+					<h2>Спасибо за заявку!</h2>
+					<div class="wrapperForTextAnswerBookingMob">
+						<p>Мы свяжемся с вами в ближайшее время</p>
+					</div>
+					<div class="wrapperForBtn">
+						<button type="button" id="sendAnswer">
+						<span>Ок</span>
+						<img src="images/mainPage/icons/pawWhite.png" width="35" height="35" alt="smallPew">
+						</button>
+						</div>					
+				</div>
+			</div>
+			<div class="wrapperForBlockRoom">
+				<div class="wrapperForImgAndRoomDescription">
+					<div class="RoomsImg">
+						<img src=""  alt="room">
+					</div>
+					<div class="wrapperForRoomDescription">
+						<h4>Эконом плюсс</h4>
+						<ul>
+							<li>Площадь - 0,90 м2
+								<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+							</li>
+							<li>Размеры (ШхГхВ) - 90х100х180 см
+								<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+							</li>
+							<li>Цена за сутки: 200&#8381;
+								<!-- Здесь было бы хорошо использовать переменные их базы данных, что бы не менять всё в ручную-->
+							</li>
+						</ul>
+						<button>
+							<span>Забронировать</span>
+							<img src="" width="25" height="25" alt="smallPew">
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="wrapperForFilterMob" id="wrapperFilter">
+				<div class="filterMob">
+					<div class="wrapperForCancel" >
+						<label class="cancelBooking" id="bookingCancel">
+								<span></span>
+						</label>
+					</div>					
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="wrapperForTopFooter">
+				<div class="logo">
+					<img src="images/mainPage/header/smallLogo.png" width="46" height="38"
+						alt="catsLogo">
+				</div>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="#whyWe">Почему мы?</a>
+						</li>
+						<li>
+							<a href="#reviews">Отзывы</a>
+						</li>
+						<li>
+							<a href="#rooms">Номера</a>
+						</li>
+						<li>
+							<a href="#contacs">Как нас найти</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapperForBottomFooter">
+				<div class="wrapperForYear">
+					<p class="year">&copy; 2020 г. Все права защищены
+				</div>
+				<p class="politics">Политика конфиденциальности
+			</div>
+		</footer>
+		<script src="js/scripts.min.js"></script>
+	</body>
+
+</html>
