@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Rubik:500&display=swap" rel="preload">
-		<link rel="shortcut icon" type="image/png" href="images/mainPage/header/pawForButton.png"/>
+		<link rel="shortcut icon" type="image/png" href="../images/mainPage/header/pawForButton.png"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
         <script src="js/datepicker.min.js"></script>	
@@ -18,7 +18,7 @@
 	<body id="body">
 		<header id="header">
 			<a class="logo" href="../">
-				<img src="images/mainPage/header/smallLogo.png" width="40" height="40"
+				<img src="../images/mainPage/header/smallLogo.png" width="40" height="40"
 					alt="catsLogo">
 			</a>
 			<div class="menu desctop">
@@ -61,13 +61,13 @@
 					<li>
 						<div class="wrapperForSignsSocial">
 								<div class="socialSigns" id="facebook">
-									<img src="images/mainPage/icons/FB.png" alt="facebook" width="24" height="24">
+									<img src="../images/mainPage/icons/FB.png" alt="facebook" width="24" height="24">
 								</div>
 								<div class="socialSigns" id="instagramm">
-									<img src="images/mainPage/icons/inst.png" alt="instagramm" width="24" height="24">
+									<img src="../images/mainPage/icons/inst.png" alt="instagramm" width="24" height="24">
 								</div>
 								<div class="socialSigns" id="vk">
-									<img src="images/mainPage/icons/vk.png" alt="vk" width="24" height="24">
+									<img src="../images/mainPage/icons/vk.png" alt="vk" width="24" height="24">
 								</div>							
 						</div>					
 					</li>
@@ -76,18 +76,20 @@
 		</header>
 		<main>
 			<div class="allRooms">
-				<h2>Наши номера</h2>
-				<div class="inputs">
-					<button type="text" id="filterButton">
-						<img src="images/mainPage/icons/filter.png" alt="" class="filterIcon">
-						<span>Фильтры</span>
-					</button>
-					<select type="text">
-						<option value="">&uarr; По площади</option>
-						<option value="">&darr; По площади</option>
-						<option value="">&uarr; По цене</option>
-						<option value="">&darr; По цене</option>
-					</select>
+				<div class="nameAndFilter">
+					<h2>Наши номера</h2>
+					<div class="inputs">
+						<button type="text" id="filterButton">
+							<img src="../images/mainPage/icons/filter.png" alt="" class="filterIcon">
+							<span>Фильтры</span>
+						</button>
+						<select type="text">
+							<option value="">&uarr; По площади</option>
+							<option value="">&darr; По площади</option>
+							<option value="">&uarr; По цене</option>
+							<option value="">&darr; По цене</option>
+						</select>
+					</div>
 				</div>
 				<div class="wrapperForAllRooms">
 					<div class="blockRoom economy" id="">
@@ -121,7 +123,7 @@
 								</ul>
 								<button id="openBookingRoomFirst">
 									<span>Забронировать</span>
-									<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+									<img src="../images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 								</button>
 							</div>
 						</div>
@@ -157,7 +159,7 @@
 								</ul>
 								<button id="openBookingRoomFirst">
 									<span>Забронировать</span>
-									<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+									<img src="../images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 								</button>
 							</div>
 						</div>
@@ -193,7 +195,7 @@
 								</ul>
 								<button id="openBookingRoomFirst">
 									<span>Забронировать</span>
-									<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+									<img src="../images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 								</button>
 							</div>
 						</div>
@@ -229,7 +231,7 @@
 								</ul>
 								<button id="openBookingRoomFirst">
 									<span>Забронировать</span>
-									<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+									<img src="../images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 								</button>
 							</div>
 						</div>
@@ -265,7 +267,7 @@
 								</ul>
 								<button id="openBookingRoomFirst">
 									<span>Забронировать</span>
-									<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+									<img src="../images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 								</button>
 							</div>
 						</div>
@@ -301,13 +303,31 @@
 								</ul>
 								<button id="openBookingRoomFirst">
 									<span>Забронировать</span>
-									<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+									<img src="../images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 								</button>
 							</div>
 						</div>
 					</div>											
 				</div>
 			</div>
+			<div class="wrapperForBannerSale">
+				<div class="bannerSale">	
+					<div class="wrapperForImgPew">
+						<img src="../images/mainPage/icons/PawBigWhite.png" width="80" height="80" alt="BigPew">
+					</div>				
+					<div class="wrapperForBannerText">
+						<span>Каждый 7-й день</span>
+						<span class="textFree">бесплатно!</span>		
+						<p>Акция действует при размещении</br>
+							в номерах “Люкс” и “Супер-Люкс” 
+						</p>
+						<button>
+							<span>Забронировать</span>
+							<img src="../images/mainPage/header/pawForButton.png" height="36" width="36" alt="smallPew">
+						</button>						
+					</div>
+				</div>
+			</div>				
 			<div class="contacts" id="contacts">
 				<div class="allContacts">
 					<h2>Как нас найти</h2>
@@ -332,13 +352,13 @@
 							<h5>Социальные сети</h5>
 							<div class="wrapperForSignsSocial">
 								<div class="socialSigns" id="facebook2">
-									<img src="images/mainPage/icons/FB.png" alt="facebook" width="24" height="24">
+									<img src="../images/mainPage/icons/FB.png" alt="facebook" width="24" height="24">
 								</div>
 								<div class="socialSigns" id="instagramm2">
-									<img src="images/mainPage/icons/inst.png" alt="instagramm" width="24" height="24">
+									<img src="../images/mainPage/icons/inst.png" alt="instagramm" width="24" height="24">
 								</div>
 								<div class="socialSigns" id="vk2">
-									<img src="images/mainPage/icons/vk.png" alt="vk" width="24" height="24">
+									<img src="../images/mainPage/icons/vk.png" alt="vk" width="24" height="24">
 								</div>							
 							</div>
 						</div>					
@@ -351,7 +371,7 @@
 			<div class="wrapperForBookingMob" id="wrapperBooking">
 				<div class="bookingMob">
 					<div class="wrapperForImgPew">
-						<img src="images/mainPage/icons/Mob/paw.png" width="125" height="110" alt="bgPew">
+						<img src="../images/mainPage/icons/Mob/paw.png" width="125" height="110" alt="bgPew">
 					</div>
 					<div class="wrapperForCancel" >
 						<label class="cancelBooking" id="bookingCancel">
@@ -377,7 +397,7 @@
 						<div class="wrapperForBtn">
 							<button type="submit" id="sendBooking" class="bookingSend" tabindex="7">
 								<span>Отправить заявку</span>
-								<img src="images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
+								<img src="../images/mainPage/icons/pawWhite.png" width="36" height="36" alt="smallPew">
 							</button>
 						</div>
 					</form>
@@ -397,7 +417,7 @@
 					<div class="wrapperForBtn">
 						<button type="button" id="sendAnswer">
 						<span>Ок</span>
-						<img src="images/mainPage/icons/pawWhite.png" width="35" height="35" alt="smallPew">
+						<img src="../images/mainPage/icons/pawWhite.png" width="35" height="35" alt="smallPew">
 						</button>
 						</div>					
 				</div>
@@ -510,12 +530,12 @@
 						</div>
 					</form>					
 				</div>
-			</div>	
+			</div>
 		</main>
 		<footer>
 			<div class="wrapperForTopFooter">
 				<div class="logo">
-					<img src="images/mainPage/header/smallLogo.png" width="46" height="38"
+					<img src="../images/mainPage/header/smallLogo.png" width="46" height="38"
 						alt="catsLogo">
 				</div>
 				<div class="menu">
