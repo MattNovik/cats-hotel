@@ -83,15 +83,15 @@
 							<img src="../images/mainPage/icons/filter.png" alt="" class="filterIcon" width="12" height="15">
 							<span>Фильтры</span>
 						</button>
-						<select type="text">
-							<option value="">&uarr; По площади</option>
-							<option value="">&darr; По площади</option>
-							<option value="">&uarr; По цене</option>
-							<option value="">&darr; По цене</option>
+						<select type="text" id="sortRooms">
+							<option value="moreSize">&uarr; По площади</option>
+							<option value="lowerSize">&darr; По площади</option>
+							<option value="morePrice">&uarr; По цене</option>
+							<option value="lowerPrice">&darr; По цене</option>
 						</select>
 					</div>
 				</div>
-				<div class="wrapperForAllRooms">
+				<div class="wrapperForAllRooms" id="wrapperForAllRooms">
 					<div class="blockRoom economy" id="econom">
 						<div class="wrapperForImgAndRoomDescription">
 							<div class="RoomsImg">
@@ -470,7 +470,7 @@
 								<span></span>
 						</label>
 					</div>
-					<form action="" class="filter" id="filter">
+					<form action="" class="filter" id="filterForm">
 						<p>Цена за сутки, &#8381</p>
 						<div class="costInput">
 							<div class="wrapperForInput">
