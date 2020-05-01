@@ -48,7 +48,7 @@
 						<a class="menuItem" id="idWhyWe" href="#whyWe">Почему мы?</a>
 					</li>
 					<li>
-						<a class="menuItem" id="openAllRooms" href="#">Номера</a>
+						<a class="menuItem" id="openAllRooms" href="allRooms/">Номера</a>
 					</li>
 					<li>
 						<a class="menuItem" id="idReviews" href="#reviews">Отзывы</a>
@@ -84,10 +84,12 @@
 									<p>Санкт-Петербург</p>
 									<h1>Котейка</h1>
 									<p>Уютная гостиница для котов и кошек</p>
-									<button id="openFilter" >
-										<span>Забронировать</span>
-										<img src="images/mainPage/header/pawForButton.png" height="36" width="36" alt="smallPew">
-									</button>									
+									<a href="allRooms/">
+										<button id="openFilter" >
+											<span>Забронировать</span>
+											<img src="images/mainPage/header/pawForButton.png" height="36" width="36" alt="smallPew">
+										</button>
+									</a>									
 								</div>
 
 							</div>
@@ -491,89 +493,7 @@
 						</button>
 					</div>
 				</div>
-			</div>
-			<div class="wrapperForFilterMob" id="wrapperFilter">
-				<div class="filterMob">
-					<div class="wrapperForCancel" >
-						<label class="cancelFilter" id="filterCancel">
-								<span></span>
-						</label>
-					</div>
-					<form action="" class="filter">
-						<p>Цена за сутки, &#8381</p>
-						<div class="costInput">
-							<div class="wrapperForInput">
-								<span class="insideInput">от</span>
-								<input type="number" class="costStart" value="100">
-							</div>
-							<div class="wrapperForInput">
-								<span class="insideInput">до</span>
-								<input type="number" class="costFinish" value="600">
-							</div>
-						</div>
-						<p class="sizeRooms">Площадь</p>
-						<div class="chooseSizeRooms">
-							<div>
-								<input type="checkbox" id="0,63" class="" checked>
-								<label for="0,63">0,63</label> м2
-							</div>
-							<div>
-								<input type="checkbox" id="0,90" class="" checked>
-								<label for="0,90">0,90</label> м2
-							</div>
-							<div>
-								<input type="checkbox" id="1,13" class="" checked>
-								<label for="1,13">1,13</label> м2
-							</div>
-							<div>
-								<input type="checkbox" id="1,56" class="" checked>
-								<label for="1,56">1,56</label> м2
-							</div>
-							<div>
-								<input type="checkbox" id="2,56" class="" checked>
-								<label for="2,56">2,56</label> м2
-							</div>
-							<div>
-								<input type="checkbox" id="2,88" class="" checked>
-								<label for="2,88">2,88</label> м2
-							</div>
-						</div>
-						<p class="furniture">Оснащение номера</p>
-						<div class="chooseFurniture">
-							<div>
-								<input type="checkbox" id="empty" class="" checked>
-								<label for="empty">Пустой</label>
-							</div>
-							<div>
-								<input type="checkbox" id="sunbed" class="" checked>
-								<label for="sunbed">Лежак</label>
-							</div>
-							<div>
-								<input type="checkbox" id="clawPoint" class="" checked>
-								<label for="clawPoint">Когтеточка</label>
-							</div>
-							<div>
-								<input type="checkbox" id="playHouse" class="" checked>
-								<label for="playHouse">Игровой комплекс</label>
-							</div>
-							<div>
-								<input type="checkbox" id="house" class="" checked>
-								<label for="house">Домик</label>
-							</div>
-						</div>
-						<div class="wrapperForBtn">						
-							<a href="allRooms/">
-								<span>Подобрать</span>
-							</a>					
-						</div>
-						<div class="wrapperForBtnReset">
-							<button>
-								<span>Сбросить фильтр</span>
-							</button>
-						</div>
-					</form>					
-				</div>
-			</div>			
+			</div>		
 		</main>
 		<footer>
 			<div class="wrapperForTopFooter">
